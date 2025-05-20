@@ -76,14 +76,14 @@ main{
     padding: 2rem;
 }
 
-.subcaja1 h1{
+.subcaja1 h1{ /*Modificamos al h1 dentro de subcaja*/
     margin: 5px 0px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     color: white;
 }
 
-.subcaja1 h3{
+.subcaja1 h3{ /*Modificamos el h3 de subcaja*/
     margin-top: 25px;
     margin-bottom: 5px;
     color: orange;
@@ -91,7 +91,7 @@ main{
     font-weight: 500px;
 }
 
-.subcaja1 h2{
+.subcaja1 h2{ /*Modificamos al h2 de subcaja*/
     color: white;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 20px;
@@ -113,6 +113,7 @@ main{
     border-radius: 20px;
     box-shadow: 3px 4px 15px black;
     margin-top: 50px;
+    position: absolute;
     cursor: pointer;
 }
 
@@ -210,8 +211,8 @@ main{
 
 /*Iniciamos con los break points*/
 
-@media(max-width: 1910px){
-    .subcaja2{ /*Subcaja 2 de contenido*/
+@media(max-width: 1910px){/*Se crea un breakpoint*/
+    .subcaja2{ /*modificamos Subcaja 2*/
     background-image: linear-gradient(orange, yellow);
     height: 100%;
     width: 50%;
@@ -222,7 +223,7 @@ main{
 }
 }
 
-@media(max-width: 1524px){
+@media(max-width: 1524px){/*Se crea un breakpoint*/
     .caja_superior nav a{
     text-decoration: none;
     font-size: 15px;
@@ -231,9 +232,9 @@ main{
     color: black;
     margin: 5px 10px;
 }
-.contenedor{ 
+.contenedor{ /*Modificamos al contenedor*/
     margin: 0 auto;
-    height: 90%;
+    height: 80%;
     width: 80%;
     background-color: blue;
     position: relative;
@@ -243,11 +244,11 @@ main{
 
 }
 
-@media(max-width: 1065px){
+@media(max-width: 1280px){ /*Se crea un breakpoint*/
     .contenedor{ 
     margin: 0 auto;
     height: 100%;
-    width: 90%;
+    width: 100%;
     background-color: blue;
     position: relative;
     top: 101px;
@@ -279,7 +280,6 @@ main{
     color: white;
     font-size: 15px;
 }
-
 .card{ /*Creamos un elememto card*/
     position: relative;
     height: 250px;
@@ -295,30 +295,67 @@ main{
 
 @media(max-width: 762px){
 
-    .caja_superior{
-    background-image: linear-gradient(brown, darkred);
-    height: 20%;
+    .contenedor{ /*Caja contenedor que almacena las subcajas*/
+    height: 100%;
     width: 100%;
-    position: relative;
+    background-color: blue;
+
+}
+
+.subcaja1{ /*Subcaja 1 de contenido*/
+    background-color: brown;
+    height: 800px;
+    width: 100%;
+    padding: 2rem;
+    position: static;
+}
+
+.boton{
+    position: static;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.caja_superior{
+    background-image: linear-gradient(brown, darkred);
+    height: 94px;
+    width: 100%;
+    padding: 10px;
+    position: static;
     border: 3px solid rgba(0, 0, 0, 0.068);
-    text-align: center;
 }
 
 .caja_superior nav{
-    position: absolute;
-    top: 0;
-    margin: 0 auto;
+    opacity: 0;
+    position: relative;
+    z-index: 10000;
+    left: 0;
+}
+
+.caja_superior nav:hover{
+    opacity: 1;
 }
 
 .caja_superior nav a{
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    margin: 5px 0px;
-    display: inherit;
-    border: 2px solid black;
+    display: block;
+    border: 3px solid black;
+    background-color: crimson;
 }
-    
+
+.subcaja2{ /*Subcaja 2 de contenido*/
+    background-image: linear-gradient(orange, yellow);
+    height: 700px;
+    width: 100%;
+    text-align: center;
+    position: static;
 }
+
+.logo{
+    z-index: 10;
+    position: relative;
+    bottom: 150px;
+}
+
+}
+
+/*FIN de los break points*/
