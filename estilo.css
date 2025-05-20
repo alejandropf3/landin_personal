@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+}
+
+/*Configuracion de la Caja superior de la pagina*/
+.caja_superior{
+    background-image: linear-gradient(brown, darkred);
+    height: 94px;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    border: 3px solid rgba(0, 0, 0, 0.068);
+}
+
+.caja_superior nav{
+    display: inline-block;
+    position: absolute;
+    top: 35px;
+    left: 190px;
+}
+
+.caja_superior nav a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 5px 35px;
+}
+
+.caja_superior nav a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-image: url(imagenes/Captura\ de\ pantalla\ 2025-05-20\ 080456.png);
+    background-size: cover;
+    position: absolute;
+    left: 25px;
+    bottom: 6px;
+}
+
+/*Configuracion de la caja principal de la pagina*/
+.caja_principal{
+    background-color: rgb(255, 255, 255);
+    height: 90%;
+    position: relative;
+}
+
+.contenedor{ /*Caja contenedor que almacena las subcajas*/
+    margin: 0 auto;
+    height: 80%;
+    width: 80%;
+    background-color: blue;
+    position: relative;
+    top: 101px;
+    box-shadow: 3px 3px 20px black;
+}
+
+.subcaja1{ /*Subcaja 1 de contenido*/
+    background-color: brown;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    padding: 2rem;
+}
+
+.subcaja1 h1{
+    margin: 5px 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: white;
+}
+
+.subcaja1 h3{
+    margin-top: 25px;
+    margin-bottom: 5px;
+    color: orange;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500px;
+}
+
+.subcaja1 h2{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.subcaja1 p{
+    color: white;
+    font-size: 17px;
+}
+
+.boton{
+    margin: 0 auto;
+    text-align: center;
+    height: 50px;
+    width: 150px;
+    background-color: orange;
+    border: 2px solid rgba(0, 0, 0, 0.068);
+    border-radius: 20px;
+    box-shadow: 3px 4px 15px black;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.subcaja2{ /*Subcaja 2 de contenido*/
+    background-image: linear-gradient(orange, yellow);
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    padding: 2rem;
+}
+
+.card{
+    position: relative;
+    height: 300px;
+    width: 200px;
+    border: 4px solid black;
+    border-radius: 7px;
+    margin: 5px 15px;
+    display: inline-block;
+    background-position: top, center;
+    background-size: cover;
+}
+
+.card h2{
+    color: rgb(255, 35, 83);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.card:hover{
+    border-color:crimson;
+}
+
+#c1{
+    background-image: url(imagenes/Captura\ de\ pantalla\ 2025-05-20\ 103638.png);
+}
+
+#c1:hover{
+    background-image: url(imagenes/la\ kabra.jpg);
+}
+
+#c2{
+    background-image: url(imagenes/Captura\ de\ pantalla\ 2025-05-20\ 103638.png);
+}
+
+#c2:hover{
+    background-image: url(imagenes/la\ kabra.jpg);
+}
+
+#c3{
+    background-image: url(imagenes/Captura\ de\ pantalla\ 2025-05-20\ 103638.png);
+}
+
+#c3:hover{
+    background-image: url(imagenes/la\ kabra.jpg);
+}
+
+#c4{
+    background-image: url(imagenes/Captura\ de\ pantalla\ 2025-05-20\ 103638.png);
+}
+
+#c4:hover{
+    background-image: url(imagenes/la\ kabra.jpg);
+}
+
+#c5{
+    background-image: url(imagenes/Captura\ de\ pantalla\ 2025-05-20\ 103638.png);
+}
+
+#c5:hover{
+    background-image: url(imagenes/la\ kabra.jpg);
+}
+
+#c6{
+    background-image: url(imagenes/Captura\ de\ pantalla\ 2025-05-20\ 103638.png);
+}
+
+#c6:hover{
+    background-image: url(imagenes/la\ kabra.jpg);
+}
